@@ -44,7 +44,7 @@ public class AddressBook {
     /**
      * Version info of the program.
      */
-    private static final String VERSION = "AddessBook Level 1 - Version 1.0";
+    private static final String VERSION = "AddressBook Level 1 - Version 1.0";
 
     /**
      * A decorative prefix added to the beginning of lines printed by AddressBook
@@ -132,6 +132,11 @@ public class AddressBook {
     private static final String COMMAND_EXIT_WORD = "exit";
     private static final String COMMAND_EXIT_DESC = "Exits the program.";
     private static final String COMMAND_EXIT_EXAMPLE = COMMAND_EXIT_WORD;
+
+
+    private static final String COMMAND_NEWEST_WORD = "newest";
+    private static final String COMMAND_NEWEST_DESC = "Shows the newest entry into the address book.";
+    private static final String COMMAND_NEWEST_EXAMPLE = COMMAND_NEWEST_WORD;
 
     private static final String DIVIDER = "===================================================";
 
