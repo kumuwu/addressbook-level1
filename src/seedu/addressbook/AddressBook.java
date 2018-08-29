@@ -201,7 +201,9 @@ public class AddressBook {
      */
     private static String storageFilePath;
 
-
+    /**
+     * The newest entry into the address book.
+     */
     private static String[] newestPerson = {""};
 
     /*
@@ -399,6 +401,12 @@ public class AddressBook {
         }
     }
 
+
+    /**
+     * Finds and displays the newest entry into the address book.
+     *
+     * @return  feedback display message for the operation result
+     */
     private static String executeNewest() {
         ArrayList<String[]> newestEntry = new ArrayList<>();
         newestEntry.add(newestPerson);
