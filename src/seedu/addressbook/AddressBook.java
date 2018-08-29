@@ -66,6 +66,7 @@ public class AddressBook {
      * =========================================================================
      */
     private static final String MESSAGE_ADDED = "New person added: %1$s, Phone: %2$s, Email: %3$s";
+    private static final String MESSAGE_NEWEST = "Newest entry displayed!";
     private static final String MESSAGE_ADDRESSBOOK_CLEARED = "Address book has been cleared!";
     private static final String MESSAGE_COMMAND_HELP = "%1$s: %2$s";
     private static final String MESSAGE_COMMAND_HELP_PARAMETERS = "\tParameters: %1$s";
@@ -199,6 +200,9 @@ public class AddressBook {
      * The path to the file used for storing person data.
      */
     private static String storageFilePath;
+
+
+    private static String[] newestPerson = {""};
 
     /*
      * NOTE : =============================================================
@@ -388,9 +392,18 @@ public class AddressBook {
             return getUsageInfoForAllCommands();
         case COMMAND_EXIT_WORD:
             executeExitProgramRequest();
-        default:
+        case COMMAND_NEWEST_WORD:
+            return executeNewest();
+            default:
             return getMessageForInvalidCommandInput(commandType, getUsageInfoForAllCommands());
         }
+    }
+
+    private static String executeNewest() {
+        ArrayList<String[]> newestEntry = new ArrayList<>();
+        newestEntry.add(newestPerson);
+        showToUser(newestEntry);
+        return MESSAGE_NEWEST;
     }
 
     /**
@@ -432,6 +445,7 @@ public class AddressBook {
         // add the person as specified
         final String[] personToAdd = decodeResult.get();
         addPersonToAddressBook(personToAdd);
+        newestPerson = decodeResult.get();
         return getMessageForSuccessfulAddPerson(personToAdd);
     }
 

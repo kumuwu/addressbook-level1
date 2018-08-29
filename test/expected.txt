@@ -1,6 +1,6 @@
 || ===================================================
 || ===================================================
-|| AddessBook Level 1 - Version 1.0
+|| AddressBook Level 1 - Version 1.0
 || Welcome to your Address Book!
 || ===================================================
 || The given file name [ ] is not a valid file name!
@@ -9,7 +9,7 @@
 || ===================================================
 || ===================================================
 || ===================================================
-|| AddessBook Level 1 - Version 1.0
+|| AddressBook Level 1 - Version 1.0
 || Welcome to your Address Book!
 || ===================================================
 || The given file name [directoryThatDoesNotExist/valid.filename] is not a valid file name!
@@ -18,7 +18,7 @@
 || ===================================================
 || ===================================================
 || ===================================================
-|| AddessBook Level 1 - Version 1.0
+|| AddressBook Level 1 - Version 1.0
 || Welcome to your Address Book!
 || ===================================================
 || The given file name [.noFilename] is not a valid file name!
@@ -27,7 +27,7 @@
 || ===================================================
 || ===================================================
 || ===================================================
-|| AddessBook Level 1 - Version 1.0
+|| AddressBook Level 1 - Version 1.0
 || Welcome to your Address Book!
 || ===================================================
 || The given file name [data/notRegularFile.txt] is not a valid file name!
@@ -36,7 +36,7 @@
 || ===================================================
 || ===================================================
 || ===================================================
-|| AddessBook Level 1 - Version 1.0
+|| AddressBook Level 1 - Version 1.0
 || Welcome to your Address Book!
 || ===================================================
 || Enter command: || [Command entered:exit]
@@ -45,7 +45,7 @@
 || ===================================================
 || ===================================================
 || ===================================================
-|| AddessBook Level 1 - Version 1.0
+|| AddressBook Level 1 - Version 1.0
 || Welcome to your Address Book!
 || ===================================================
 || Using default storage file : addressbook.txt
@@ -124,6 +124,11 @@
 || Enter command: || [Command entered:  add Adam Brown p/111111 e/adam@gmail.com]
 || New person added: Adam Brown, Phone: 111111, Email: adam@gmail.com
 || ===================================================
+|| Enter command: || [Command entered:  newest]
+|| 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
+|| 
+|| Newest entry displayed!
+|| ===================================================
 || Enter command: || [Command entered:  list]
 || 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
 || 
@@ -137,6 +142,11 @@
 || 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
 || 
 || 2 persons found!
+|| ===================================================
+|| Enter command: || [Command entered:  newest]
+|| 	1. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
+|| 
+|| Newest entry displayed!
 || ===================================================
 || Enter command: || [Command entered:  add Charlie Dickson e/charlie.d@nus.edu.sg p/333333]
 || New person added: Charlie Dickson, Phone: 333333, Email: charlie.d@nus.edu.sg
